@@ -9,49 +9,57 @@ class _InputPageState extends State<InputPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text('BMI CALCULATOR'),
+      appBar: AppBar(
+        title: Text('BMI CALCULATOR'),
+      ),
+      body: Column(children: <Widget>[
+        Expanded(
+            child: Row(
+              children: <Widget>[
+                Expanded(
+                  child: ReusableCard(colour: Color(0xFF1DE33)),
+                ),
+                Expanded(
+                  child: ReusableCard(colour: Color(0xFF1DE33)),
+                ),
+              ],
+            )),
+        Expanded(
+          child: ReusableCard(colour: Color(0xFF1DE33)),
         ),
-        body: Column(children: <Widget>[
-          Expanded(
-              child: Row(
-            children: <Widget>[
-              Expanded(
-                child: ReusableCard(Color(0xFF1DE33)),
-              ),
-              Expanded(
-                child: ReusableCard(Color(0xFF1DE33)),
-              ),
-            ],
-          )),
-          Expanded(
-            child:  ReusableCard(Color(0xFF1DE33)),
-          ),
-          Expanded(
-              child: Row(
-            children: <Widget>[
-              Expanded(
-                child: ReusableCard(Color(0xFF1DE33)),
-              ),
-              Expanded(
-                child:  ReusableCard(Color(0xFF1DE33)),
-              ),
-            ],
-          )),
-        ]));
+        Expanded(
+            child: Row(
+              children: <Widget>[
+                Expanded(
+                  child: ReusableCard(colour: Color(0xFF1DE33)),
+                ),
+                Expanded(
+                  child: ReusableCard(colour: Color(0xFF1DE33)),
+                ),
+              ],
+            ),
+        ),
+        Container(
+          color: Color(0xFFEB1555),
+        ),
+      ],
+      ),
+    );
   }
 }
 
+// ignore: must_be_immutable
 class ReusableCard extends StatelessWidget {
-  ReusableCard(this.colour);
+  ReusableCard({@required this.colour});
 
-  Color colour;
+  final Color colour;
+
   @override
   Widget build(BuildContext context) {
     return Container(
         margin: EdgeInsets.all(15),
         decoration: BoxDecoration(
-          color: colour ,
+          color: colour,
           borderRadius: BorderRadius.circular(10),
         ));
   }
