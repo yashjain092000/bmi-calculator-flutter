@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
 const  bottomContainerHeight=80.0;
 const activeCardColor=Color(0xFF1DE33);
 const bottomContainerColor=Color(0xFFEB1555);
@@ -25,7 +26,16 @@ class _InputPageState extends State<InputPage> {
                       colour: activeCardColor,
                     cardChild: Column(
                       children: <Widget>[
-                        Icon(FontAwesomeIcons.mars,size:80,color:Colors.white,),
+                        Icon(
+                          FontAwesomeIcons.mars,
+                          size:80,
+                          color:Colors.white,
+                        ),
+                        SizedBox(
+                          height:15,
+                        ),
+                        Text('MALE',style:TextStyle(fontSize: 18.0,
+                            color: Color(0xFF8D8E98),),),
 
 
                       ]
