@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
 import 'icon_content.dart';
 import 'reusable_card.dart';
 
@@ -14,6 +15,9 @@ class InputPage extends StatefulWidget {
 }
 
 class _InputPageState extends State<InputPage> {
+  Color maleCardColor=inactiveCardColor;
+  Color femaleCardColor=inactiveCardColor;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,7 +34,7 @@ class _InputPageState extends State<InputPage> {
                       print('male pressed');
                     },
                     child: ReusableCard(
-                      colour: inactiveCardColor,
+                      colour: maleCardColor,
                       cardChild: IconContent(
                           icon: FontAwesomeIcons.mars, label: 'MALE'),
                     ),
@@ -42,7 +46,7 @@ class _InputPageState extends State<InputPage> {
                       print('female pressed');
     },
 
-                    child: ReusableCard(colour: inactiveCardColor,
+                    child: ReusableCard(colour: femaleCardColor,
                       cardChild: IconContent(
                           icon: FontAwesomeIcons.venus, label: 'FEMALE'),),
                   ),
