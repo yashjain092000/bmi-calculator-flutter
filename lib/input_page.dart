@@ -88,6 +88,8 @@ class _InputPageState extends State<InputPage> {
                     ],
                   ),
                   Slider(
+                    value: height.toDouble(),
+
 
                   ),
                 ],
