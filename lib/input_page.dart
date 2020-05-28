@@ -65,7 +65,12 @@ class _InputPageState extends State<InputPage> {
             ],
           )),
           Expanded(
-            child: ReusableCard(colour: activeCardColor),
+            child: ReusableCard(colour: activeCardColor,
+            cardChild: Column(
+              children: <Widget>[
+
+              ]
+            )),
           ),
           Expanded(
             child: Row(
