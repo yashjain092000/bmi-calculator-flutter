@@ -4,7 +4,6 @@ import 'constants.dart';
 import 'icon_content.dart';
 import 'reusable_card.dart';
 
-
 enum Gender {
   male,
   female,
@@ -33,11 +32,11 @@ class _InputPageState extends State<InputPage> {
             children: <Widget>[
               Expanded(
                 child: ReusableCard(
-                  onPress: (){
-      setState(() {
-        selectedGender=Gender.male;
-
-      });},
+                  onPress: () {
+                    setState(() {
+                      selectedGender = Gender.male;
+                    });
+                  },
                   colour: selectedGender == Gender.male
                       ? kActiveCardColor
                       : kInactiveCardColor,
@@ -47,9 +46,9 @@ class _InputPageState extends State<InputPage> {
               ),
               Expanded(
                 child: ReusableCard(
-                  onPress:(){
+                  onPress: () {
                     setState(() {
-                      selectedGender=Gender.female;
+                      selectedGender = Gender.female;
                     });
                   },
                   colour: selectedGender == Gender.female
@@ -62,12 +61,14 @@ class _InputPageState extends State<InputPage> {
             ],
           )),
           Expanded(
-            child: ReusableCard(colour: kActiveCardColor,
-            cardChild: Column(
-              children: <Widget>[
-
-              ]
-            )),
+            child: ReusableCard(
+                colour: kActiveCardColor,
+                cardChild: Column(children: <Widget>[
+                  Text(
+                    'HEIGHT',
+                    style: kLabelTextStyle,
+                  )
+                ])),
           ),
           Expanded(
             child: Row(
