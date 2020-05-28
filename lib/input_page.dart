@@ -18,6 +18,7 @@ class _InputPageState extends State<InputPage> {
   Color maleCardColor = kInactiveCardColor;
   Color femaleCardColor = kInactiveCardColor;
   Gender selectedGender;
+  int height=180;
 
   @override
   Widget build(BuildContext context) {
@@ -85,7 +86,10 @@ class _InputPageState extends State<InputPage> {
                         style: kLabelTextStyle,
                       )
                     ],
-                  )
+                  ),
+                  Slider(
+
+                  ),
                 ],
               ),
             ),
