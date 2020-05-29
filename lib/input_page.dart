@@ -138,6 +138,9 @@ class _InputPageState extends State<InputPage> {
                             backgroundColor: Color(0xFFE4C4F5E),
 
                           ),
+                            SizedBox(
+                              width: 10,
+                            ),
                             FloatingActionButton(
                               child:Icon(Icons.add,
                                 color: Colors.white,),
