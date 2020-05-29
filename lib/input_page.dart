@@ -133,11 +133,11 @@ class _InputPageState extends State<InputPage> {
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
-                          children: <Widget>[ RoundIconButton(),
+                          children: <Widget>[ RoundIconButton(icon: FontAwesomeIcons.plus),
                             SizedBox(
                               width: 10,
                             ),
-                           RoundIconButton(),],
+                           RoundIconButton(icon: FontAwesomeIcons.minus),],
                         ),
                       ],
                     ),
