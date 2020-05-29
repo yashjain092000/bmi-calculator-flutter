@@ -132,7 +132,8 @@ class _InputPageState extends State<InputPage> {
                           style: kNumberTextStyle,
                         ),
                         FloatingActionButton(
-                          child:Icon(Icons.add),
+                          child:Icon(Icons.add,
+                          color: Colors.white,),
                           backgroundColor: Color(0xFFE4C4F5E),
 
                         ),
