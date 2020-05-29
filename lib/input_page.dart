@@ -19,7 +19,7 @@ class _InputPageState extends State<InputPage> {
   Color femaleCardColor = kInactiveCardColor;
   Gender selectedGender;
   int height = 180;
-  int weight=60;
+  int weight = 60;
 
   @override
   Widget build(BuildContext context) {
@@ -122,8 +122,15 @@ class _InputPageState extends State<InputPage> {
                     colour: kActiveCardColor,
                     cardChild: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children:<Widget>[
-                        Text('WEIGHT',style:kLabelTextStyle,),
+                      children: <Widget>[
+                        Text(
+                          'WEIGHT',
+                          style: kLabelTextStyle,
+                        ),
+                        Text(
+                          weight.toString(),
+                          style: kNumberTextStyle,
+                        ),
                       ],
                     ),
                   ),
