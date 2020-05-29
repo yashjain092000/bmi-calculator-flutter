@@ -131,11 +131,19 @@ class _InputPageState extends State<InputPage> {
                           weight.toString(),
                           style: kNumberTextStyle,
                         ),
-                        FloatingActionButton(
-                          child:Icon(Icons.add,
-                          color: Colors.white,),
-                          backgroundColor: Color(0xFFE4C4F5E),
+                        Row(
+                          children: <Widget>[ FloatingActionButton(
+                            child:Icon(Icons.add,
+                              color: Colors.white,),
+                            backgroundColor: Color(0xFFE4C4F5E),
 
+                          ),
+                            FloatingActionButton(
+                              child:Icon(Icons.add,
+                                color: Colors.white,),
+                              backgroundColor: Color(0xFFE4C4F5E),
+
+                            ),],
                         ),
                       ],
                     ),
