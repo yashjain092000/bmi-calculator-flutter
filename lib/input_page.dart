@@ -133,19 +133,19 @@ class _InputPageState extends State<InputPage> {
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
-                          children: <Widget>[ RoundIconButton(icon: FontAwesomeIcons.plus,
+                          children: <Widget>[ RoundIconButton(icon: FontAwesomeIcons.minus,
                           onPressed:(){
                             setState(() {
-                              weight++;
+                              weight--;
                             });
                           },),
                             SizedBox(
                               width: 10,
                             ),
-                           RoundIconButton(icon: FontAwesomeIcons.minus,
+                           RoundIconButton(icon: FontAwesomeIcons.plus,
                              onPressed:(){
                                setState(() {
-                                 weight--;
+                                 weight++;
                                });
                              },),],
                         ),
@@ -154,7 +154,10 @@ class _InputPageState extends State<InputPage> {
                   ),
                 ),
                 Expanded(
-                  child: ReusableCard(colour: kActiveCardColor),
+                  child: ReusableCard(colour: kActiveCardColor,
+                  cardChild: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                  ),),
                 ),
               ],
             ),
