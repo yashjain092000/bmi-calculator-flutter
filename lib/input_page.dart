@@ -142,7 +142,12 @@ class _InputPageState extends State<InputPage> {
                             SizedBox(
                               width: 10,
                             ),
-                           RoundIconButton(icon: FontAwesomeIcons.minus),],
+                           RoundIconButton(icon: FontAwesomeIcons.minus,
+                             onPressed:(){
+                               setState(() {
+                                 weight--;
+                               });
+                             },),],
                         ),
                       ],
                     ),
