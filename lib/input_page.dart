@@ -132,6 +132,7 @@ class _InputPageState extends State<InputPage> {
                           style: kNumberTextStyle,
                         ),
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[ FloatingActionButton(
                             child:Icon(Icons.add,
                               color: Colors.white,),
