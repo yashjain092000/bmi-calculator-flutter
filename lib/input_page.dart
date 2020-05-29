@@ -192,7 +192,7 @@ class _InputPageState extends State<InputPage> {
                               icon: FontAwesomeIcons.plus,
                               onPressed: () {
                                 setState(() {
-                                  age++;
+                                  age ++;
                                 });
                               },
                             ),
