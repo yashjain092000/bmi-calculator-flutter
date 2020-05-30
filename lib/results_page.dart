@@ -8,7 +8,13 @@ class ResultsPage extends StatelessWidget {
         title: Text('BMI CALCULATOR'),),
         body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: <Widget>[
+          Expanded(
+            child: Container(
 
+            ),
+          )
+        ],
         ),
 
     );
