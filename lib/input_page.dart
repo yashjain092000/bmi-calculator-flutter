@@ -220,6 +220,7 @@ class _InputPageState extends State<InputPage> {
                 ),
               ),
               color: kBottomContainerColor,
+              padding: EdgeInsets.only(bottom:20),
               margin: EdgeInsets.only(top: 10),
               width: double.infinity,
               height: kBottomContainerHeight,
