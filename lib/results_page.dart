@@ -14,7 +14,11 @@ class ResultsPage extends StatelessWidget {
             child: Container(
            child: Text('Your Result',style: kTitleTextStyle),
             ),
-          )
+          ),
+          Expanded(
+            flex: 5,
+            child: Container()
+          ),
         ],
         ),
 
