@@ -1,7 +1,7 @@
 import 'package:bmi_calculator/constants.dart';
 import 'package:flutter/material.dart';
 import 'reusable_card.dart';
-
+import 'input_page.dart';
 class ResultsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -27,13 +27,17 @@ class ResultsPage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
                     Text('Normal', style: kResultTextStyle),
-                    Text('18.3',style: kBMITextStyle),
-                    Text('Your BMI result is quite low ',style: kBodyTextStyle)
-
-
+                    Text('18.3', style: kBMITextStyle),
+                    Text('Your BMI result is quite low ',
+                        style: kBodyTextStyle),
                   ],
-                )),
+                ),
+            ),
           ),
+            BottomButton(onTap: (){
+              Navigator.pop(context);
+            }, displayText: 'RE-CALCULATE')
+
         ],
       ),
     );
