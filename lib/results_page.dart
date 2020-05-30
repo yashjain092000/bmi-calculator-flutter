@@ -1,3 +1,4 @@
+import 'package:bmi_calculator/constants.dart';
 import 'package:flutter/material.dart';
 
 class ResultsPage extends StatelessWidget {
@@ -11,7 +12,7 @@ class ResultsPage extends StatelessWidget {
         children: <Widget>[
           Expanded(
             child: Container(
-
+           child: Text('Your Result',style: kTitleTextStyle),
             ),
           )
         ],
