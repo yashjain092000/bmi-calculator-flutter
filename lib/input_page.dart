@@ -35,37 +35,37 @@ class _InputPageState extends State<InputPage> {
         children: <Widget>[
           Expanded(
               child: Row(
-                children: <Widget>[
-                  Expanded(
-                    child: ReusableCard(
-                      onPress: () {
-                        setState(() {
-                          selectedGender = Gender.male;
-                        });
-                      },
-                      colour: selectedGender == Gender.male
-                          ? kActiveCardColor
-                          : kInactiveCardColor,
-                      cardChild:
+            children: <Widget>[
+              Expanded(
+                child: ReusableCard(
+                  onPress: () {
+                    setState(() {
+                      selectedGender = Gender.male;
+                    });
+                  },
+                  colour: selectedGender == Gender.male
+                      ? kActiveCardColor
+                      : kInactiveCardColor,
+                  cardChild:
                       IconContent(icon: FontAwesomeIcons.mars, label: 'MALE'),
-                    ),
-                  ),
-                  Expanded(
-                    child: ReusableCard(
-                      onPress: () {
-                        setState(() {
-                          selectedGender = Gender.female;
-                        });
-                      },
-                      colour: selectedGender == Gender.female
-                          ? kActiveCardColor
-                          : kInactiveCardColor,
-                      cardChild: IconContent(
-                          icon: FontAwesomeIcons.venus, label: 'FEMALE'),
-                    ),
-                  ),
-                ],
-              )),
+                ),
+              ),
+              Expanded(
+                child: ReusableCard(
+                  onPress: () {
+                    setState(() {
+                      selectedGender = Gender.female;
+                    });
+                  },
+                  colour: selectedGender == Gender.female
+                      ? kActiveCardColor
+                      : kInactiveCardColor,
+                  cardChild: IconContent(
+                      icon: FontAwesomeIcons.venus, label: 'FEMALE'),
+                ),
+              ),
+            ],
+          )),
           Expanded(
             child: ReusableCard(
               colour: kActiveCardColor,
@@ -97,9 +97,9 @@ class _InputPageState extends State<InputPage> {
                       activeTrackColor: Colors.white,
                       inactiveTrackColor: Color(0xFF8D8E98),
                       thumbShape:
-                      RoundSliderThumbShape(enabledThumbRadius: 15.0),
+                          RoundSliderThumbShape(enabledThumbRadius: 15.0),
                       overlayShape:
-                      RoundSliderOverlayShape(overlayRadius: 30.0),
+                          RoundSliderOverlayShape(overlayRadius: 30.0),
                       overlayColor: Color(0x29EB1555),
                     ),
                     child: Slider(
@@ -194,11 +194,10 @@ class _InputPageState extends State<InputPage> {
                               icon: FontAwesomeIcons.plus,
                               onPressed: () {
                                 setState(() {
-                                  age ++;
+                                  age++;
                                 });
                               },
                             ),
-
                           ],
                         ),
                       ],
@@ -210,12 +209,14 @@ class _InputPageState extends State<InputPage> {
           ),
           GestureDetector(
             onTap: () {
-              Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => ResultsPage())
-              );
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => ResultsPage()));
             },
             child: Container(
-              child: Text('CALCULATE'),
+              child: Text(
+                'CALCULATE',
+                style: kLargeButtonTextStyle,
+              ),
               color: kBottomContainerColor,
               margin: EdgeInsets.only(top: 10),
               width: double.infinity,
