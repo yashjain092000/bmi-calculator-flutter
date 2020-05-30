@@ -21,6 +21,10 @@ class ResultsPage extends StatelessWidget {
             child: ReusableCard(colour: kActiveCardColor,
             cardChild: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+
+              ],
             )),
           ),
         ],
