@@ -28,3 +28,7 @@ const kResultTextStyle=TextStyle(
   fontSize:23.0,
   fontWeight: FontWeight.bold,
 );
+const kBMITextStyle=TextStyle(
+  fontSize:100.0,
+  fontWeight: FontWeight.bold,
+);

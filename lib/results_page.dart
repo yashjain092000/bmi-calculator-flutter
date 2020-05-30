@@ -23,10 +23,12 @@ class ResultsPage extends StatelessWidget {
                 colour: kActiveCardColor,
                 cardChild: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  crossAxisAlignment: CrossAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: <Widget>[
-                    Text('Normal',style:kResultTextStyle),
-                    ],
+                    Text('Normal', style: kResultTextStyle),
+                    Text('18.3',)
+
+                  ],
                 )),
           ),
         ],
