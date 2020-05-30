@@ -11,6 +11,7 @@ class ResultsPage extends StatelessWidget {
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           Expanded(
             child: Container(
@@ -23,10 +24,11 @@ class ResultsPage extends StatelessWidget {
                 colour: kActiveCardColor,
                 cardChild: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
                     Text('Normal', style: kResultTextStyle),
-                    Text('18.3',)
+                    Text('18.3',style: kBMITextStyle),
+
 
                   ],
                 )),
