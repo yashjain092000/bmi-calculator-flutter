@@ -33,5 +33,6 @@ const kBMITextStyle=TextStyle(
   fontWeight: FontWeight.bold,
 );
 const kBodyTextStyle=TextStyle(
+
   fontSize:22.0,
 );
